@@ -17,11 +17,11 @@
             <fieldset>
                 <legend>información personal</legend><br>
                 <label for="name">Nombre:  </label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
                 <br>
                 <br>
                 <label for="lastName">Apellido:</label>
-                <input type="text" id="lastName" name="lastName"><br><br>
+                <input type="text" id="lastName" name="lastName" placeholder="Ingrese su apellido"><br><br>
                 
             </fieldset>
 
@@ -31,11 +31,11 @@
             <fieldset>
                 <legend> Información de contacto</legend><br>
                 <label for="correo"> Correo eléctronico:</label>
-                <input type="text" id="correo" name="correo"><br><br>
+                <input type="text" id="correo" name="correo" placeholder="ejemplo@gmail.com"> <br><br>
                 <label for="telCelular"> Telefono celular:                  </label>
-                <input type="tel" id="telCelular" name="telCelular"><br><br>
+                <input type="tel" id="telCelular" name="telCelular" placeholder=" ejemplo: 3004057489"><br><br>
                 <label for="telFijo"> Telefono Fijo </label>
-                <input type="tel" id="telFijo" name="telFijo"><br><br>
+                <input type="tel" id="telFijo" name="telFijo" placeholder="si es necesario"><br><br>
 
 
             </fieldset>
@@ -45,11 +45,11 @@
             <fieldset>
                 <legend> Información de residencia </legend><br>
                 <label for="direccion">Dirección:</label>
-                <input type="text" name="direccion" id="direccion"><br><br>
+                <input type="text" name="direccion" id="direccion" placeholder="carrera xx #xx-xx"><br><br>
                 <label for="barrio">Barrio:</label>
-                <input type="text" id="barrio" name="barrio"><br><br>
+                <input type="text" id="barrio" name="barrio" placeholder="Ejemplo: Laureles"><br><br>
                 <label for="ciudad">Ciudad</label>
-                <input type="text" name="ciudad" id="ciudad"><br><br>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ejemplo: Medellín"><br><br>
                 <label for="departamento">Departamento</label>
                 <select name="departamento" id="departamento">
                     <optgroup label="Elige tu departamento">
@@ -287,10 +287,17 @@
                     <option value="presencial">Presencial</option>
                     </optgroup>
                 </select>
+                <br><br>
+                <label for="descripcion">Queremos saber de tí</label><br>
+                <textarea name="descripcion" id="descripcion" rows="4" cols="100" placeholder="Ingresa acá las cosas importante que nos quiera compartir, no mas de 300 caracteres"
+                maxlength="300"></textarea >
 
             </fieldset><br><br>
+
                   
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button> 
+            
+            <button type="reset">Resetear</button
 
         </fieldset>
 </FORM>        
