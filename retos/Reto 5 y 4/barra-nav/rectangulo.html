@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../estilos/variables.css"/>
+    <link rel="stylesheet" href="../estilos/font.css"/>
+    <link rel="stylesheet" href="../estilos/style.css"/>
+    <title>Reto #5</title>
+</head>
+<body>    
+    <header>
+        <nav>
+            <ul class="header-list">
+                <li>
+                    <a href="./rectangulo.html">Rectangulo</a>
+                </li>
+                <li>
+                    <a href="./circulo.html">Círculo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- titulo e imagenes de fondo -->
+        <section class="image-container">
+                <h1>El rectangulo</h1>
+                <img src="../img/superhero.png" alt="imagen de un superheroe" class="overlow-image">   
+        </section>        
+        <section class="second-section">
+            <!-- calculadora área, perimetro y diagonal -->
+            <div>
+                <h2>Calculadora de área, perimetro y diagonal</h2>
+            </div>
+            <div class="second-section-info">
+                <div> 
+                    <!--Imagenes de la figura -->
+                    <img src="../img/rectangulo.png" alt="imgen del cuadrado" class="imagen-cuadrado">
+
+                </div>
+                <div>
+                    <!--sección donde se ingresa los datos -->
+                    <form class="rect-base-altura">
+                        <div>
+                            <!--base en centimetros -->
+                            <label for="base-centimetros">Base (cm)</label>
+                            <input type="number" id="base-centimetros" name="base-centimetros" placeholder="ingrese los datos">
+                        </div>
+                        <div>
+                            <!--alto en centimetros -->
+                            <label for="altura-centimetros">altura-centimetros</label>
+                            <input type="number" id="altura-centimetros" name="altura-centimetros" placeholder="ingrese los datos">
+                        </div>
+                    </form>
+                </div>              
+                <div class="caja-resultados">
+                    <!--Sección de los resultados -->
+                    <div class="primera-caja">
+                        <!--text resultados -->
+                        <p>Resultados</p>
+                    </div>
+                    <div class="segunda-caja">
+                        <div  class="tercera-caja">
+                            <!--área-->
+                            <label>Area cm2</label>
+                            <input type="text" id="area" readonly>
+                        </div>
+                        <div class="tercera-caja">
+                            <!--perimetro-->
+                            <label>Perimetro(cm)</label>
+                            <input type="text" id="perimetro" readonly>
+                        </div> 
+                        <div class="tercera-caja">
+                            <!--Diagonal  -->
+                            <label>Diagonal cm</label>
+                            <input type="text" id="diagonal" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- boton de resultados -->
+            <div class="boton">
+                <button onclick="calcularTotal()">calcular</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Backend/rectangulo.js"></script>
+</body>
+</html>
