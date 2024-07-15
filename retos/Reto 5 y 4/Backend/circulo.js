@@ -9,6 +9,7 @@ function perimetroCirculo (){
     let radio = parseFloat(document.getElementById('radio').value);
     
     let perimetro = 2 * Math.PI * radio;
+    document.getElementById().
     
     document.getElementById('perimetro').value = perimetro.toFixed(2);
 }

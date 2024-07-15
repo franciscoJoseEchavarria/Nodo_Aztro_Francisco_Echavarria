@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+        <!-- Enlace a una hoja de estilos CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>s
+        <header class="titulo">
+            <h1>Ejercicios Javascript</h1>       
+        </header>
+        <!-- NADADOR tarea1 -->              
+        <section class="section-principal">
+            <!-- utilizar article... -->
+            <article class="section-secundario">
+                <form action="" onsubmit="return false;" class="form-principal">
+                    <p>Un nadador necesita conocer el promedio final de tiempo que gasta en recorrer una piscina de 100 metros, 
+                    sabiendo que en el día el realiza cinco pruebas medidas en segundos.
+                    </p>
+                    <div class="clase1">
+                        <img src="./imagenes/26867853_7160028.svg" alt="nadador">
+                        <div class="clase1-1">
+                            <div>   
+                                <label for="tiempo1">Tiempo 1</label>
+                                <input type="number" step="0.5" id="tiempo1" required placeholder="R en segundos" >
+                            </div>
+                            <div>
+                                <label for="tiempo2">Tiempo 2</label>
+                                <input type="number" step="0.5" id="tiempo2" required placeholder="R en segundos" >
+                            </div>
+                            <div>
+                                <label for="tiempo3">Tiempo 3</label>
+                                <input type="number" step="0.5" id="tiempo3" required placeholder="R en segundos" >
+                            </div>
+                            <div>
+                                <label for="tiempo4">Tiempo 4</label>
+                                <input type="number" step="0.5" id="tiempo4" required placeholder="R en segundos" >
+                            </div>
+                            <div>
+                                <label for="tiempo5">Tiempo 5</label>
+                                <input type="number" step="0.5" id="tiempo5" required placeholder="R en segundos" >
+                            </div>
+                        </div>
+                        <!-- caja de resultado prom, calcular y establecer -->
+                        <div class="clase2">   
+                            <div class="clase2-1">
+                                <label for="resultado">Promedio</label>
+                                <input type="number" id="resultado" disabled>
+                            </div>
+                            <div class="clase2-3">
+                                <input type="submit" value="Calcular" id="enviar" onclick="promedioTotal ()">
+                                <input type="reset" value="Restablecer" id="restablecer">
+                            </div>
+                        </div>
+                    </div>    
+                </form>
+            </article>              
+            <!-- AGRÓNOMO tarea 2 -->
+            <!-- article -->
+            <article class="section-secundario">
+                <form action="" onsubmit="return false;" class="form-principal">
+                    <p>Un agrónomo desea una forma rápida de encontrar cuantos litros de pesticida debe aplicar a un conjunto de terrenos de forma trapezoidal,
+                        si por cada metro cuadrado debe aplicar 1.5 litros de pesticida.
+                        Además le piden que determine cuantos metros de cerca eléctrica son necesarios para rodear todo el terreno.</p>
+                        <div class="clase1">
+                            <img src="./imagenes/imagen2.svg" alt="agronomo">
+                            <div class="clase1-1">
+                                <div>
+                                    <label for="baseMayor">B. mayor (m)</label>
+                                    <input type="number" step="0.5" id="baseMayor" required placeholder="En metros" >
+                                </div>
+                                <div>
+                                    <label for="baseMenor">B. menor (m)</label>
+                                    <input type="number" step="0.5" id="baseMenor" required placeholder="En metros" >
+                                </div>
+                                <div>
+                                    <label for="altura">altura (m)</label>
+                                    <input type="number" step="0.5" id="altura" required placeholder="En metros" >
+                                </div>
+                                <div>
+                                    <label for="rendimiento">Rend. Pesticida</label>
+                                    <input type="number" id="rendimiento" step="0.1" placeholder="litos/m2">
+                                </div>
+                                <div>
+                                    <label for="lado1">Dis. L. derecho</label>
+                                    <input type="number" id="lado1" step="0.5" placeholder="Perimetro L.derecho">
+                                </div>
+                                <div>
+                                    <label for="lado2">Dis. L. izquierdo</label>
+                                    <input type="number" id="ladow" step="0.5" placeholder="Perimetro L.derecho">
+                                </div>
+                            </div>
+                            <div class="clase2">
+                                <div class="clase2-1">
+                                    <label for="resultado2">Litro de pesticida necesarios</label>
+                                    <input type="number" id="resultado2" disabled>
+                                </div>
+                                <div class="clase2-1">
+                                    <label for="metrosCerca">metros de cerca</label>
+                                    <input type="number" id="metrosCerca" disabled>
+                                </div>
+                                <div class="clase2-3">
+                                    <input type="submit" value="Resultado" id="enviar" onclick="calcularTotal2()">
+                                    <input type="reset" value="Restablecer" id="restablecer">
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </article>
+
+                    <!-- Tarea 3 -->
+                    
+                    <article class="section-secundario">
+                        <form action="" onsubmit="return false;" class="form-principal">
+                            <p>Un maestro de obra quiere emplear una forma rápida de poder calcular el numero de 
+                            ladrillo que necesita para una pared ¿Puedes ayudarlo?
+                            </p>
+                            <div class="clase1">
+                                <img src="./imagenes/imagen3.jpg" alt="">
+                                
+                                <div class="clase1-1">
+                                    <div>
+                                        <label for="baseLadrillo">Base ladrillo (m)</label>
+                                        <input type="number" step="0.01" id="baseLadrillo" required placeholder="En metros" >
+                                    </div>
+                                    <div>
+                                        <label for="anchoLadrillo">Ancho del ladrillo (m)</label>
+                                        <input type="number" step="0.01" id="anchoLadrillo" required placeholder="En metros" >
+                                    </div>
+                                    <div>
+                                        <label for="metros">M2 de la pared</label>
+                                        <input type="number" id="metros" step="0.5">
+                                    </div>    
+                                </div>
+                                
+                                <div class="clase2">
+                                    <div class="clase2-1">
+                                        <label for="resultado3">Ladrillo necesarios</label>
+                                        <input type="number" id="resultado3" disabled>
+                                    </div>
+                                    <div class="clase2-3">
+                                        <input type="submit" value="Resultado" id="enviar" onclick="calcularTotal3 ()">
+                                        <input type="reset" value="Restablecer" id="restablecer">
+                                    </div>
+                                </div>    
+                            </div>
+                </form>
+            </article>
+                    <!-- Tarea 4 -->
+            <article class="section-secundario">
+                <form action="" onsubmit="return false;" class="form-principal">
+                        <p>Un Medico desea utilizar un sitio web que le muestre a un persona su estado de salud, 
+                            dependiendo del índice de masa corporal a partir de su peso y altura, 
+                            al mismo tiempo mostrar en que rango de encuentra, delgado, normal, obeso, etc. (ver la tabla). 
+                            ANEXO: utiliza condicionales para determinar el rango en el cual se encuentra la persona una vez calcules su Índice de 
+                            Masa Corporal (IMC), recuerda de debes inicialmente calcular el IMC y a través de su valor determinar con condicionales en 
+                            que rango se encuentra el paciente.  Adjunto encontraras la formula para hacer el calculo y las dos tablas de rangos vistas 
+                            en clase, puedes usar cualquiera de las dos.
+                        </p>
+                        <div class="clase1">
+                            <img src="./imagenes/imagen4.svg" alt="Obesidad">
+                            <div class="clase1-1">
+                                <div>
+                                    <label for="peso">Ingrese su peso</label>
+                                    <input type="number" step="0.5" id="peso" placeholder="Peso en kg" required>
+                                </div>
+                                <div>
+                                    <label for="altura">Ingrese su altura</label>
+                                    <input type="number" step="0.01" id="altura" placeholder="Altura en metros" required>
+                                </div>
+                            </div>
+                            <div class="clase2">                  
+                                <div class="clase2-1">
+                                    <label for="resultado4">Tipo de obesidad</label>
+                                    <input type="text" id="resultado4" disabled>
+                                </div>                               
+                                <div class="clase2-3">
+                                    <input type="submit" value="Resultado" id="enviar" onclick="calcularTotal4()">
+                                    <input type="reset" value="Resetear" id="resetear">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+            </article>
+        </section> 
+        
+        <script src="./backend.js"></script>
+    </body>
+</html>
+    
