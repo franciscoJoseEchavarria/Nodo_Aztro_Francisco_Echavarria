@@ -1,0 +1,141 @@
+:root {
+    --azul-princiapl: #1345FA;
+    --azul-secundario: #00229D;
+    --amarillo-principal: #ffea08;
+    --text-color: #ECE8EF;
+    --texto-color-secundario: #1b1b1d;
+    --borde-rojo: #ea3014;
+}
+
+
+
+body {
+        
+    background-color: var(--azul-secundario);
+    font-family: "Inter Variable";
+    color: var(--text-color);
+    position: relative;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+    width: 70vw;
+    height: 20vh;
+    border: 5px solid var(r);
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 5px solid var(--borde-rojo);
+    
+
+}
+
+
+.listaInicio {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding-left: 0;
+
+& li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+
+    &:hover {
+            background-color: var(--text-color);
+            color: var(--texto-color-secundario);
+            
+        }
+    }
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-princiapl);    
+    border-radius:30px ;
+    width: 60vw;
+    height: 100vh;
+    border: 5px solid var(--text-color);
+    position: absolute;
+    margin: 20px 0px 20px 0px;
+
+}
+
+fieldset{
+    border-radius: 30px;
+}
+
+.fieldset-padre > legend {
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 800;
+}
+
+.datos-personales {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    & legend{  
+        text-align: center;
+    }
+}
+
+.datos-nombre {
+    display: flex;
+    gap: 0px 30px;
+    justify-content: center;
+}
+
+.parrafo-formulario{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.botones-genero{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* .informacion-de-cont > legend {
+    display: row;
+    text-align: center;
+    justify-content: center;
+} */
+
+.informacion-contacto{
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    
+.informacion-de-cont {
+
+    & .caja-secundaria-correo{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    }
+
+    & .caja-secundaria-telefono{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    }
+
+    }
+
