@@ -1,5 +1,7 @@
 package Abstrac;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Usuario {
@@ -7,11 +9,15 @@ public abstract class Usuario {
     private int id;
     private String nombre;
     private String apellido;
-    private Date fechaNacimiento;
+    String fechaNacimiento;
     private String direccion;
     private int telefono;
 
-    public Usuario(int id, String nombre, String apellido, Date fechaNacimiento, String direccion, int telefono) {
+    public Usuario (){
+
+    }
+
+    public Usuario(int id, String nombre, String apellido, String fechaNacimiento, String direccion, int telefono) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -45,7 +51,7 @@ public abstract class Usuario {
         this.apellido = apellido;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
@@ -65,4 +71,8 @@ public abstract class Usuario {
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+
+
+
+
 }

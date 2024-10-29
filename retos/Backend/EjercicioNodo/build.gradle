@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClassName = 'org.example.Main'  // Ruta completa a la clase Main
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Dependencies para JUnit
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // JPA (Jakarta Persistence API)
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
+
+    // Jakarta Bean Validation
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+
+    // Hibernate (Provedor JPA)
+    implementation 'org.hibernate.orm:hibernate-core:6.2.10.Final'
+
+    // Connector PostgreSQL
+    implementation 'org.postgresql:postgresql:42.7.4'
+
+    // Library for reading files .env
+    implementation 'io.github.cdimascio:dotenv-java:3.0.0'
+
+    // Lombok
+    implementation 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+}
+
+test {
+    useJUnitPlatform()
+}

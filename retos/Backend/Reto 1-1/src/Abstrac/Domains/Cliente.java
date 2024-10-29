@@ -1,4 +1,5 @@
 package Abstrac.Domains;
+import Abstrac.Domains2.Viaje;
 import Abstrac.Usuario;
 
 import java.util.ArrayList;
@@ -7,9 +8,13 @@ import java.util.List;
 
 public class Cliente extends Usuario {
 
-    List <String> destinos = new ArrayList<>();
+    List <Viaje> destinos = new ArrayList<>();
 
-    public Cliente(int id, String nombre, String apellido, Date fechaNacimiento,
+    public Cliente(int i, String s) {
+
+    }
+
+    public Cliente(int id, String nombre, String apellido, String fechaNacimiento,
                    String direccion, int telefono) {
         super(id, nombre, apellido, fechaNacimiento, direccion, telefono);
         this.destinos = new ArrayList<>();
@@ -17,14 +22,12 @@ public class Cliente extends Usuario {
 
     //metodo para agregar listas
 
-    public void agregarDestinos(String destino){
-        destinos.add(destino);
+    public void agregarDestinos(Viaje viaje){
+        this.destinos.add(viaje);
     }
 
-    public List<String> getDestinos (){
+    public List<Viaje> getDestinos (){
         return  this.destinos;
     }
-
-
 
 }
